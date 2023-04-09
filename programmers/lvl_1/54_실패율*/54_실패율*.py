@@ -25,3 +25,5 @@ def solution(N, stages):
         else:
             result[stage] = 0
     return sorted(result, key=lambda x: result[x], reverse=True)
+
+# Need to understand why the conditional statement is necessary...why zero
