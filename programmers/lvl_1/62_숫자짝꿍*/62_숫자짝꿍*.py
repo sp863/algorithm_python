@@ -37,4 +37,4 @@ def solution(X, Y):
     else:
         return answer
 
-# need review
+# '0' * 0 is an empty string because 0 indicates that the string should be repeated zero times
