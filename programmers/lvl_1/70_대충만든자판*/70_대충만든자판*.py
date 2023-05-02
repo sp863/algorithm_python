@@ -68,3 +68,4 @@ def solution(keymap, targets):
 
 # most answers utilize a keymap dictionary to reduce time complexity when searching for a letter
 # Also, my solution was incorrect because I didn't consider the case where a letter is not in the keymap ex) [-1, -1, -1]
+# Added another solution using try, except -> index causes an error if the letter is not in the keymap
