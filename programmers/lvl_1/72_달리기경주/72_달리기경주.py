@@ -32,3 +32,4 @@ def solution(players, callings):
     return players
 
 # Remember how the solution made the dictionary. This works too
+# Also review how the solution performs swapping of two variables. This works in python.
