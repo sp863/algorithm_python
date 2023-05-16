@@ -87,4 +87,6 @@ def solution(today, terms, privacies):
     ]
     return expire
 
-# my solution is incorrect. other solutions need to be studied.
+# my solution is incorrect.
+# need to solve this problem again.
+# both solutions turn the dates into days and compare them.
