@@ -34,16 +34,23 @@ def solution(park, routes):
 
         y = dog[0]
         x = dog[1]
+        can_move = True
         for j in range(dist):
             if direction == 'E' or direction == 'W':
-                x += vector[direction] * 1
+                move = x + vector[direction]
+                if move < len(move_map[0]) and move_map[y][move] == True:
+                    x = move
+                else:
+                    can_move = False
             else:
-                y += vector[direction] * 1
+                move = y + vector[direction]
+                if move < len(park) and move_map[move][x] == True:
+                    y = move
+                else:
+                    can_move = False
 
-        print(y, x)
-
-        if y < len(park) and x < len(move_map[0]) and move_map[y][x] == True:
+        if can_move == True:
             dog[0] = y
             dog[1] = x
 
-    print(dog)
+    return dog
